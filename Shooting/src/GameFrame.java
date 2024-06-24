@@ -16,6 +16,7 @@ public class GameFrame extends MyFrame{
 			moveEnemies();
 			checkPlayerAndEnemies();
 			checkPlayerBulletsAndEnemies();
+			
 			sleep(0.03);
 		}
 		
