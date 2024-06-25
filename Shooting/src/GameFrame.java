@@ -99,7 +99,7 @@ public class GameFrame extends MyFrame{
 					e.life--;
 				}
 				if(e.life<=0){
-					GameWorld.score++;
+					GameWorld.score+=e.score;
 					GameWorld.enemies.remove(j);
 				}else {
 					j++;
