@@ -38,6 +38,10 @@ public class Player extends Character implements KeyListener{
 //					new PlayerBullet(x, y, -3, -10));
 			//System.out.println("a"+GameWorld.playerBullets.size());
 		}
+		if(e.getKeyCode()==KeyEvent.VK_ENTER) {
+			System.out.println("enterキーが押されました");
+			GameWorld.enterPressed=true;
+		}
 	}
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
