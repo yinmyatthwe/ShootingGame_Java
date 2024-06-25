@@ -20,18 +20,18 @@ public class EnemyBase extends Enemy{
 			vx=GameWorld.stage;
 		}
 		//System.out.println(Math.random());
-		if(Math.random()<0.05) {
-			GameWorld.enemies.add(new StraightEnemy(x, y, 0, 1+GameWorld.stage));
-		}
-		if(Math.random()<0.05) {
-			GameWorld.enemies.add(new RandomEnemy(x, y, 0, GameWorld.stage));
-		}
-		if(Math.random()<0.05) {
+//		if(Math.random()<0.05) {
+//			GameWorld.enemies.add(new StraightEnemy(x, y, 0, 1+GameWorld.stage));
+//		}
+//		if(Math.random()<0.05) {
+//			GameWorld.enemies.add(new RandomEnemy(x, y, 1+GameWorld.stage, GameWorld.stage));
+//		}
+		if(Math.random()<0.1) {
 			GameWorld.enemies.add(new DropEnemy(x, y, 0, GameWorld.stage));
-		}
-		if(Math.random()<0.05) {
-			GameWorld.enemies.add(new CurveEnemy(x, y, 0, GameWorld.stage));
-		}
+		} 
+//		if(Math.random()<0.05) {
+//			GameWorld.enemies.add(new CurveEnemy(x, y, 1+GameWorld.stage, GameWorld.stage));
+//		}
 	}
 
 }
